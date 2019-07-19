@@ -1,0 +1,1 @@
+<template name="2035b9cc"><view class="_view M2035b9cc">latitude：{{latitude}}<view class="_br M2035b9cc"></view><view class="_br M2035b9cc"></view><view class="_br M2035b9cc"></view>longitude：{{longitude}}</view></template>
