@@ -1,2 +1,0 @@
-<import src="./longpress.vue.wxml" />
-    <template is="607d714d" data="{{ ...$root['0'], $root }}"/>

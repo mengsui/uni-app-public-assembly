@@ -1,1 +1,0 @@
-<template name="19ee7406"><view class="_view M19ee7406 container"><view class="_view M19ee7406 show_block"><image class="_image M19ee7406 img" wx:if="{{pic}}" src="{{pic}}"></image><canvas class="_canvas M19ee7406 myCanvas" canvas-id="myCanvas" style="width: 750px; height: 1157px;"></canvas></view></view></template>
