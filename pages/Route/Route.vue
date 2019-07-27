@@ -9,8 +9,9 @@
 		data() {
 			const time = new Date().getTime();
 			console.log(time);
+			// 注意。嵌套的时候微信会不刷新。最好拼接一个时间戳来让拼接的链接改变从而强制刷新嵌套页面
 			return {
-				url: 'https://wap.soufucai.com/activity/test.html?time='+time,
+				url: 'https://www.baidu.com/?time='+time,
 			};
 		}
 	}

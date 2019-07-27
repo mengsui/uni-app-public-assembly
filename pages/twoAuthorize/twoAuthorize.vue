@@ -14,8 +14,9 @@
 
 <script>
 	import _app from '@/components/QS-SharePoster/app.js';
+	// 注意：使用这个插件在绘制canvas，安卓机上可能会出现有的文案颜色无法设置问题。IOS无问题。
 	import getSharePoster from '@/components/QS-SharePoster/QS-SharePoster.js';
-	
+
 	function hs(x){
 		return x * 1;
 	}
@@ -35,9 +36,9 @@
 			initAjax(){
 				const address = "河北省石家庄市裕华区聚力体育";
 				const lineNub = address.length;
-				let backgroundImage = 'http://imgs.soufucai.com/Uploads/xcx/hsgUniApp/businessCardbg1.png'
+				let backgroundImage = '../../static/businessCardbg1.png'
 				if(lineNub>20){
-					backgroundImage = 'http://imgs.soufucai.com/Uploads/xcx/hsgUniApp/businessCardbg2.png'
+					backgroundImage = '../../static/businessCardbg1.png'
 				};
 				const param = {
 					backgroundImage,
@@ -55,8 +56,9 @@
 							backgroundImage: param.backgroundImage,
 							qrCodeArray: (bgObj, type) => {
 								return [{
-									text: 'http://imgs.soufucai.com/Uploads/xcx/hsgUniApp/qc-img.png',
-									image: 'http://imgs.soufucai.com/Uploads/xcx/hsgUniApp/qc-img.png',
+									text: '这里填二维码链接',
+									// 这个是二维码中心logo图片链接
+									image: '//img0.imgtn.bdimg.com/it/u=1756633021,617129201&fm=26&gp=0.jpg',
 									size: hs(168),
 									dx: hs(291),
 									dy: hs(642),
@@ -65,7 +67,7 @@
 							imagesArray: (bgObj, type) => { //接收的第一个参数为背景图片的信息, 第二个参数是自定义标识（感觉这里用不到）, 图片为示例图片
 								return [
 									{
-										url: 'http://imgs.soufucai.com/Uploads/xcx/hsgUniApp/businessCardbg1.png',
+										url: '//img0.imgtn.bdimg.com/it/u=1756633021,617129201&fm=26&gp=0.jpg',
 										dx: hs(65),
 										dy: hs(177),
 										dWidth: hs(130),
@@ -92,7 +94,7 @@
 								let text1 = '李小林';
 								Context.fillText(text1, hs(227), hs(177));
 								// 性别
-								Context.drawImage('http://imgs.soufucai.com/Uploads/xcx/hsgUniApp/gender1.png', hs(341), hs(188), hs(25), hs(25))
+								// Context.drawImage('http://imgs.soufucai.com/Uploads/xcx/hsgUniApp/gender1.png', hs(341), hs(188), hs(25), hs(25))
 								
 								Context.setFontSize(hs(26));
 								Context.setFillStyle('#2C3240');
@@ -101,38 +103,21 @@
 								let text2 = '合格率：95%';
 								Context.fillText(text2, hs(227), hs(230));
 								
-								Context.setFontSize(hs(26));
-								Context.setFillStyle('#2C3240');
-								Context.setTextAlign('left');
-								Context.setTextBaseline('top');
 								let text3 = '工龄：8年';
 								Context.fillText(text3, hs(227), hs(272));
 
-								Context.setFontSize(hs(26));
-								Context.setFillStyle('#2C3240');
-								Context.setTextAlign('left');
-								Context.setTextBaseline('top');
 								let text4 = '交通工具：汽车';
 								Context.fillText(text4, hs(379), hs(272));
 								
-								Context.setFillStyle('#2C3240');
-								Context.setTextAlign('left');
-								Context.setTextBaseline('top');
-								Context.setFontSize(hs(26));
+								
 								let text5 = '小工（铲除 保护）';
 								Context.fillText(text5, hs(119), hs(356));
 
-								Context.setFillStyle('#2C3240');
-								Context.setTextAlign('left');
-								Context.setTextBaseline('top');
-								Context.setFontSize(hs(26));
+
 								let text6 = '15028123835';
 								Context.fillText(text6, hs(119), hs(425));
 
-								Context.setFillStyle('#2C3240');
-								Context.setTextAlign('left');
-								Context.setTextBaseline('top');
-								Context.setFontSize(hs(26));
+
 								let text7 = param.address;
 								if(param.address.length > 20){
 									const size1 = text7.slice(0, 22);
@@ -169,10 +154,11 @@
 									self.saveImage2();
 								},
 								fail() {
-									
+									// js 因为拒绝授权了有冷却时间。短时间内是无法吊起授权的。
+									// 如果使用buttom按钮吊起的授权是无改问题的。
 									uni.showModal({
 										title: '温馨提示',
-										content: '您已拒绝授权，是否去设置打开？',
+										content: '您已拒绝授权，只有授权后才可以保存图片，是否去设置打开？',
 										confirmText: "确认",
 										cancelText: "取消",
 										success: function(res) {

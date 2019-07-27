@@ -32,6 +32,7 @@
 			// 这里只是判断当前用户有没有登录
 			vm.user_id = uni.getStorageSync('user_id');
 			vm.user_token = uni.getStorageSync('user_token');
+			
 			if(!vm.user_id && !vm.user_token){
 				uni.redirectTo({
 					url: '../login/login',
@@ -68,7 +69,7 @@
 				//特别注意：get请求可以不添加请求头。但是post请求必须添加下面请求头。（添加原因查看uni-app官网在request方法解释的最下面）
 				uni.request({
 					method:"POST",
-					url: dateUtils.baseUrl+'Service/Goods/searchGoodsOpen?user_id='+vm.user_id+'&user_token='+vm.user_token+'&device=wap',
+					url: dateUtils.baseUrl+'Service/Goods/searchGoodsOpen',
 					data: {
 						p: vm.reachBottom.page,//当前页数  使用这个值需要和后台确认是否有效
 						num: vm.reachBottom.pageSize,//每页返回几个  使用这个值需要和后台确认是否有效

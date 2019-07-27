@@ -1,2 +1,0 @@
-<import src="./hangzhouTracks.vue.wxml" />
-    <template is="2eb9d68c" data="{{ ...$root['0'], $root }}"/>

@@ -1,6 +1,7 @@
 <template>
 	<view class="content">
         <text>通用组件</text>
+		<text>场景值：{{options}}</text>
 		<view class="box">
 			<view class="same" @click="qiehuan()">
 				底部导航切换为flex
@@ -8,6 +9,7 @@
 			<view class="same" v-for="(item, nub) in  list" :key="nub" @click="navTo(item.path)">
 				{{item.title}}
 			</view>
+			
         </view>
 		<cmd-bottom-nav
 			v-if="navStyle"
@@ -41,16 +43,20 @@
 				current: 0,
 				list: [
 					{
+						path: '/pages/payment/payment',
+						title: '支付系统',
+					},
+					{
 						path: '/pages/twoAuthorize/twoAuthorize',
 						title: '授权第一次拒绝后唤醒第二次授权（相册为例）',
 					},
-					{
-						path: '/pages/hangzhouTracks/hangzhouTracks',
-						title: '热力图'
-					},
+					// {
+					// 	path: '/pages/hangzhouTracks/hangzhouTracks',
+					// 	title: '热力图'
+					// },
 					{
 						path: '/pages/leftDel/leftDel',
-						title: '左滑删除'
+						title: '左滑删除（还有问题没解决）'
 					},
 					{
 						path: '/pages/sidePull/index',
@@ -98,15 +104,11 @@
 					},
 					{
 						path: '/pages/canvasImg/canvasImg',
-						title: 'canvas进入直接生成图片（插件）'
+						title: 'canvas生成图片（插件 完成版）'
 					},
 					{
-						path: '/pages/canvasImg/canvasImg2',
-						title: 'canvas生成图片(安卓ios都可以)'
-					},
-					{
-						path: '/pages/canvasImg/canvasImg4',
-						title: 'canvas进入直接生成图片(安卓ios都可以)'
+						path: '/pages/canvasImg/canvasImg6',
+						title: 'canvas生成图片（封装，层级自行控制）'
 					},
 					{
 						path: '/pages/relationDiagram/relationDiagram',
@@ -122,30 +124,38 @@
 					},
 					{
 						path: '/pages/Route/Route',
-						title: '路由'
+						title: '页面嵌套'
 					},
 					{
 						path: '/pages/longpress/longpress',
-						title: '长按事件'
+						title: '长按事件（暂未完成）'
 					},
 					{
 						path: '/pages/getLocation2/getLocation2',
 						title: '经纬度获取转换',
-					}
-				]
+					},
+					
+				],
+				options: '',
 			}
 		},
 		onLoad() {
 			
 		},
-		onHide() {
-			console.log('onHide隐藏首页')
+		onShow() {
+			// 获取用户进入场景。（注意只是第一次打开小程序的场景）
+			var obj = wx.getLaunchOptionsSync();
+			if (obj) {
+				this.options = JSON.stringify(obj);
+			}
 		},
-		beforeDestroy() {
-			console.log('beforeDestroy销毁前首页')
-		},
-		destroyed() {
-			console.log('destroyed销毁首页')
+		onShareAppMessage(res){
+			const vm = this;
+
+			return {
+				title: '修改',
+				path: 'pages/index/index',
+			};
 		},
 		methods: {
 			qiehuan(){

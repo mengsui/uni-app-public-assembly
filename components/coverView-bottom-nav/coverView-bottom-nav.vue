@@ -31,13 +31,13 @@
 					return [
 						{
 							"pagePath": "/pages/index/index",
-							"text": "组件", 
+							"text": "组件（flex）", 
 							"src": "../../static/home.png",
 							"srcSelect": "../../static/homeactive.png"
 						},
 						{
 							"pagePath": "/pages/template/template",
-							"text": "模板",
+							"text": "模板（flex）",
 							"src": "../../static/business.png",
 							"srcSelect": "../../static/businessactive.png"
 						}
@@ -124,12 +124,7 @@
 			}
 		},
 		onLoad() {
-			this.userInfo = uni.getStorageSync('userInfo');
-			if(this.userInfo){
-				this.userInfo = JSON.parse(this.userInfo);
-			}else {
-				console.log('没有获取到登录信息的话，这里要回跳到登录页面');
-			};
+			
 			
 			this.initPage();
 		},

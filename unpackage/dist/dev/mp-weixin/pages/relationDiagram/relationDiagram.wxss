@@ -22,12 +22,12 @@
 }
 
 
-.echarts-box.data-v-61bb5207 {
+.echarts-box.data-v-28737083 {
   position: relative;
   width: 500rpx;
   height: 500rpx;
 }
-.chart-tips.data-v-61bb5207 {
+.chart-tips.data-v-28737083 {
   position: absolute;
   left: 0;
   top: 50%;
@@ -39,7 +39,7 @@
   text-align: center;
   color: #ccc;
 }
-.chart-abs.data-v-61bb5207 {
+.chart-abs.data-v-28737083 {
   position: absolute;
   width: 100%;
   height: 100%;

@@ -1,2 +1,2 @@
 <import src="./relationDiagram.vue.wxml" />
-    <template is="1b91822a" data="{{ ...$root['0'], $root }}"/>
+    <template is="5c5ba22d" data="{{ ...$root['0'], $root }}"/>

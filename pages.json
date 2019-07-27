@@ -1,12 +1,6 @@
 {
 	"pages": [
 		{
-		    "path" : "pages/login/login",
-		    "style" : {
-		        "navigationBarTitleText" : "登录"
-		    }
-		},
-		{
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "首页"
@@ -160,28 +154,36 @@
 			}
         },
 		{
+            "path" : "pages/canvasImg/canvasImg5",
+            "style" : {
+				"navigationBarTitleText": "canvas生成图片(安卓ios都可以)优化"
+			}
+        },
+		{
+            "path" : "pages/canvasImg/canvasImg6",
+            "style" : {
+				"navigationBarTitleText": "canvas生成图片(安卓ios都可以)封装"
+			}
+        },
+		{
             "path" : "pages/relationDiagram/relationDiagram",
             "style" : {
 				"navigationBarTitleText": "canvas生成关系图"
 			}
-        }
-        ,{
+        },
+		{
             "path" : "pages/map/map",
             "style" : {
 				"navigationBarTitleText": "路径轨迹图"
 			}
-        }
-		,{
+        },
+		{
             "path" : "pages/map/map2",
             "style" : {
 				"navigationBarTitleText": "地图订单圆点显示位置"
 			}
-        }
-        ,{
-            "path" : "pages/hangzhouTracks/hangzhouTracks",
-            "style" : {}
-        }
-        ,{
+        },
+		{
             "path" : "pages/Route/Route",
             "style" : {}
         },
@@ -194,11 +196,19 @@
             "style" : {
 				
 			}
-        }
-        ,{
+        },
+		{
             "path" : "pages/twoAuthorize/twoAuthorize",
             "style" : {}
-        }
+        },
+		{
+            "path" : "pages/payment/payment",
+            "style" : {}
+        },
+		{
+			"path": "pages/searchForMerchandise/index",
+			"style" : {}
+		}
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

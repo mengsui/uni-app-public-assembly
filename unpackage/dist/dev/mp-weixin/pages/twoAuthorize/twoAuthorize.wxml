@@ -1,2 +1,2 @@
 <import src="./twoAuthorize.vue.wxml" />
-    <template is="11e286da" data="{{ ...$root['0'], $root }}"/>
+    <template is="3cb9a51d" data="{{ ...$root['0'], $root }}"/>

@@ -1,2 +1,2 @@
 <import src="./dropDownRefresh.vue.wxml" />
-    <template is="164a9890" data="{{ ...$root['0'], $root }}"/>
+    <template is="5714b893" data="{{ ...$root['0'], $root }}"/>

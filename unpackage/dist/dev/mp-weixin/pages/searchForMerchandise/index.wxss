@@ -1,0 +1,274 @@
+.price.data-v-11d698e3,
+.price-icon.data-v-11d698e3,
+.price-count.data-v-11d698e3 {
+  display: inline-block;
+  line-height: 1;
+}
+.price-icon.data-v-11d698e3 {
+  font-size: 22rpx;
+}
+.price-count.data-v-11d698e3 {
+  font-size: 26rpx;
+}
+.price-icon-sup.data-v-11d698e3,
+.price-icon-sub.data-v-11d698e3 {
+  font-size: 52%;
+}
+.price-icon-sup.data-v-11d698e3 {
+  vertical-align: super;
+  line-height: 1.1;
+}
+.price-icon-del.data-v-11d698e3,
+.price-count-del.data-v-11d698e3 {
+  font-weight: normal;
+  text-decoration: line-through;
+}
+.price-count-decimal-small.data-v-11d698e3 {
+  display: inline;
+  font-size: 62%;
+}
+
+.clear.data-v-5b0a2711:after {
+  content: '';
+  display: block;
+  clear: both;
+  width: 0;
+  height: 0;
+}
+.f-l.data-v-5b0a2711 {
+  float: left;
+}
+.f-r.data-v-5b0a2711 {
+  float: right;
+}
+.content.data-v-5b0a2711 {
+  width: 100%;
+  overflow: hidden;
+}
+.quexing.data-v-5b0a2711 {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: -webkit-calc(100% - 175rpx);
+  height: calc(100% - 175rpx);
+}
+.quexing .tips.data-v-5b0a2711 {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -138rpx;
+  width: 100%;
+  line-height: 42rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #333;
+  padding-top: 234rpx;
+  background-image: url(https://wap.soufucai.com/img/XCX/sfc/static/goods-none2.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 220rpx 206rpx;
+}
+.list.data-v-5b0a2711 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: #fff;
+}
+.border-top.data-v-5b0a2711 {
+  border-top: 1rpx solid #ddd;
+}
+.filterDrawer.data-v-5b0a2711 {
+  padding: 30rpx;
+  position: relative;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.filterDrawer .uni-title.data-v-5b0a2711 {
+  height: 37rpx;
+  font-size: 26rpx;
+  font-weight: 600;
+  color: #333333;
+  line-height: 37rpx;
+  padding: 0;
+  margin-bottom: 20rpx;
+}
+.filterDrawer .filter-list .filter-item.data-v-5b0a2711 {
+  padding: 0 15rpx;
+  height: 57rpx;
+  line-height: 57rpx;
+  text-align: center;
+  background: #f5f5f5;
+  -webkit-border-radius: 4rpx;
+          border-radius: 4rpx;
+  font-size: 24rpx;
+  margin-right: 19rpx;
+  margin-bottom: 19rpx;
+  float: left;
+}
+.filterDrawer .filter-list .filter-item.active.data-v-5b0a2711 {
+  background: url("https://wap.soufucai.com/img/XCX/sfc/static/status-background.png") no-repeat 0 0;
+  background-size: cover;
+}
+.filterDrawer .filter-list .filter-item-time.data-v-5b0a2711 {
+  height: 57rpx;
+  line-height: 57rpx;
+  background: #ffffff;
+  -webkit-border-radius: 4rpx;
+          border-radius: 4rpx;
+  border: 1rpx solid #999999;
+  padding: 0 15rpx;
+  margin-bottom: 20rpx;
+}
+.filterDrawer .filter-list .filter-item-time .sfc-input.data-v-5b0a2711 {
+  font-size: 24rpx;
+  height: 57rpx;
+  line-height: 57rpx;
+}
+.filterDrawer .btn-box.data-v-5b0a2711 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 30rpx;
+  right: 30rpx;
+  bottom: 30rpx;
+}
+.filterDrawer .btn-box .Reset-btn.data-v-5b0a2711 {
+  width: 236rpx;
+  height: 77rpx;
+  line-height: 77rpx;
+  -webkit-border-radius: 4rpx;
+          border-radius: 4rpx;
+  border: 1px solid #0079f3;
+  color: #0079f3;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 25rpx;
+}
+.filterDrawer .btn-box .submit-btn.data-v-5b0a2711 {
+  width: 236rpx;
+  height: 77rpx;
+  line-height: 77rpx;
+  background: #0079f3;
+  color: #fff;
+  -webkit-border-radius: 4rpx;
+          border-radius: 4rpx;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.filter.data-v-5b0a2711 {
+  padding: 20rpx 25rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+.filter .filterTr.data-v-5b0a2711 {
+  float: left;
+  width: 25%;
+  text-align: center;
+  font-size: 32rpx;
+  line-height: 45rpx;
+  color: #333;
+}
+.filter .filterTr.active.data-v-5b0a2711 {
+  color: #F5A623;
+}
+.filter .filterTr.price_bg.data-v-5b0a2711 {
+  background-image: url('https://wap.soufucai.com/img/XCX/sfc/static/filter.png');
+  background-position: 130rpx center;
+  background-repeat: no-repeat;
+  background-size: 15rpx 29rpx;
+}
+.filter .filterTr.price_bg.active.bg_img1.data-v-5b0a2711 {
+  background-image: url('https://wap.soufucai.com/img/XCX/sfc/static/filterS.png');
+}
+.filter .filterTr.price_bg.active.bg_img2.data-v-5b0a2711 {
+  background-image: url('https://wap.soufucai.com/img/XCX/sfc/static/filterJ.png');
+}
+.filter .filterTr.filter_bg.data-v-5b0a2711 {
+  background-image: url('https://wap.soufucai.com/img/XCX/sfc/static/filter_bg.png');
+  background-position: 130rpx center;
+  background-repeat: no-repeat;
+  background-size: 30rpx 34rpx;
+}
+.filter .filterTr.filter_bg.active.data-v-5b0a2711 {
+  background-image: url('https://wap.soufucai.com/img/XCX/sfc/static/filter_bgA.png');
+}
+.box.data-v-5b0a2711 {
+  padding: 20rpx 25rpx 0;
+}
+.box .same.data-v-5b0a2711 {
+  position: relative;
+  padding: 20rpx 0;
+}
+.box .same.data-v-5b0a2711:before {
+  content: '';
+  position: absolute;
+  left: 25rpx;
+  bottom: 0;
+  border-top: 1rpx solid #ddd;
+  height: 1rpx;
+  width: 725rpx;
+}
+.box .same .same-img.data-v-5b0a2711 {
+  width: 144rpx;
+  height: 144rpx;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.box .same .same-img .image.data-v-5b0a2711 {
+  width: 100%;
+  height: 100%;
+}
+.box .same .same-detail.data-v-5b0a2711 {
+  width: 532rpx;
+}
+.box .same .same-detail .title.data-v-5b0a2711 {
+  font-size: 28rpx;
+  line-height: 40rpx;
+  margin-bottom: 10rpx;
+  color: #333;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.box .same .same-detail .taps.data-v-5b0a2711 {
+  margin-bottom: 15rpx;
+}
+.box .same .same-detail .taps .taps-tr.data-v-5b0a2711 {
+  font-size: 26rpx;
+  line-height: 37rpx;
+  color: #666;
+  margin-right: 25rpx;
+}
+.box .same .same-detail .price.data-v-5b0a2711 {
+  font-size: 30rpx;
+  line-height: 42rpx;
+  color: #F23D00;
+  font-weight: bold;
+}
+.box .same .same-detail .price .size.data-v-5b0a2711 {
+  float: left;
+}
+.box .same .same-detail .price .discount.data-v-5b0a2711 {
+  padding-right: 118rpx;
+  background-image: url(https://wap.soufucai.com/img/XCX/sfc/static/discount.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 93rpx 37rpx;
+}
+

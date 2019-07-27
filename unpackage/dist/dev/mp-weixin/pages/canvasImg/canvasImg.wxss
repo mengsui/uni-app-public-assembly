@@ -1,4 +1,4 @@
-.btn.data-v-48caab2f {
+.btn.data-v-67bfa3ab {
   width: 600rpx;
   height: 77rpx;
   font-size: 30rpx;
@@ -12,20 +12,20 @@
   -webkit-border-radius: 10rpx;
           border-radius: 10rpx;
 }
-.hideCanvasView.data-v-48caab2f {
+.hideCanvasView.data-v-67bfa3ab {
   position: relative;
 }
-.hideCanvas.data-v-48caab2f {
+.hideCanvas.data-v-67bfa3ab {
   position: fixed;
   top: -99999rpx;
   left: -99999rpx;
   z-index: -99999;
 }
-.posterImage-content.data-v-48caab2f {
+.posterImage-content.data-v-67bfa3ab {
   width: 100%;
   height: 1040rpx;
 }
-.posterImage-content .posterImage.data-v-48caab2f {
+.posterImage-content .posterImage.data-v-67bfa3ab {
   width: 100%;
   margin-top: -117rpx;
 }

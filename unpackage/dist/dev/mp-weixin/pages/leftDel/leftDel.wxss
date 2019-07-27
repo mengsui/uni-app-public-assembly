@@ -1,26 +1,26 @@
-.clear.data-v-7c348278:after {
+.clear.data-v-b92a8908:after {
   content: '';
   display: block;
   clear: both;
   width: 0;
   height: 0;
 }
-.content.data-v-7c348278 {
+.content.data-v-b92a8908 {
   width: 100%;
   overflow: hidden;
 }
-.content .same.data-v-7c348278 {
+.content .same.data-v-b92a8908 {
   position: relative;
   width: -webkit-calc(100% + 100px);
   width: calc(100% + 100px);
 }
-.content .same .box.data-v-7c348278 {
+.content .same .box.data-v-b92a8908 {
   float: left;
   width: -webkit-calc(100% - 100px);
   width: calc(100% - 100px);
   background-color: aqua;
 }
-.content .same .del.data-v-7c348278 {
+.content .same .del.data-v-b92a8908 {
   float: left;
   width: 100px;
   background-color: red;

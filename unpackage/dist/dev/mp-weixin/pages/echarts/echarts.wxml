@@ -1,2 +1,2 @@
 <import src="./echarts.vue.wxml" />
-    <template is="c36efea0" data="{{ ...$root['0'], $root }}"/>
+    <template is="32e106b3" data="{{ ...$root['0'], $root }}"/>
